@@ -1,0 +1,128 @@
+/* create 3x3 grid with header on top */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .wrapper {
+        display: grid;
+        border: 1px solid black;
+        background-color: burlywood;
+        width: 200px;
+      }
+
+      .wrapper2 {
+        display: grid;
+        border: 1px solid black;
+        background-color: burlywood;
+        width: 200px;
+      }
+      .header {
+        background-color: grey;
+        border: 1px solid black;
+        grid-column-start: 1;
+        grid-column-end: 4; /*can do grid-column:1/3 as shortcut*/
+        grid-row-start: 1;
+        grid_row-end: 2;
+      }
+      .item {
+        border: 1px solid black;
+        background-color: coral;
+      }
+      .a {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .b {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .c {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .d {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .e {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .f {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .g {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      .h {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      .i {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      .a1 {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">header</div>
+      <div class="item a">1</div>
+      <div class="item b">2</div>
+      <div class="item c">3</div>
+      <div class="item d">4</div>
+      <div class="item e">5</div>
+      <div class="item f">6</div>
+      <div class="item g">7</div>
+      <div class="item h">8</div>
+      <div class="item i">9</div>
+    </div>
+    <div class="empty">&nbsp;</div>
+    <div class="wrapper2">
+      <div class="item a1">1</div>
+      <div class="item b1">2</div>
+      <div class="item c1">3</div>
+      <div class="item d1">4</div>
+      <div class="item e1">5</div>
+      <div class="item f1">6</div>
+    </div>
+  </body>
+</html>

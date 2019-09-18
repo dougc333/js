@@ -18,5 +18,12 @@
   "homepage": "https://github.com/dougc333/js#readme",
   "dependencies": {
     "chrome-remote-interface": "^0.28.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-react": "^7.14.3"
   }
 }

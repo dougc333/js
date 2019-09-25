@@ -1,4 +1,5 @@
-//test classes
+//test classes ES6 supposed to use # is private data member
+//works in chrome doesnt work in VSCODE
 //private data uses # well that isnt what vscode says.. 
 //says hash is invalid character! chrome ok! 
 //careful there is javascript, JavascriptReact, Typescript, Typescript React settins

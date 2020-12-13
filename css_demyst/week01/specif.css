@@ -1,0 +1,61 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #00a1ab;
+  font-weight: 900;
+}
+
+.cards {
+  display: flex;
+  gap: 1em;
+}
+
+.card {
+  padding: 2em;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 1em;
+  line-height: 1.6;
+}
+
+.card--dark {
+  background: #234;
+  color: white;
+}
+
+.card--light {
+  background: #eee;
+  color: #234;
+}
+.card--title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+}
+
+.card--description {
+  margin-bottom: 3em;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.25em;
+  padding: 0.5em 0.75em;
+  font-weight: 700;
+}
+
+.button__dark {
+  background: #234;
+  color: #fff;
+}
+.button__light {
+  background: #fff;
+  color: #4e4e4e;
+}

@@ -1,0 +1,73 @@
+body {
+  font-family: "Roboto", 2.5rem;
+  text-transform: uppercase;
+  color: #00a1ab;
+  font-weight: 900;
+  /*text-align: center;*/
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #00a1ab;
+  font-weight: 900;
+  /*text-align: center;
+ */
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+.subhead {
+  font-size: 1.3125rem;
+  /*text-align: center;*/
+  margin-top: 0;
+}
+
+.plan {
+  background: linear-gradient(-45deg, #00a1ab);
+  width: 200px;
+  padding: 2em;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin: 0 auto;
+}
+
+.plan__title {
+  color: #fff;
+  text-transform: uppercase;
+  /*text-align: center;*/
+  margin: 0 0 1em;
+}
+
+.plan__price {
+  font-size: 3em;
+  font-weight: 900;
+  /*text-align: center;*/
+  color: white;
+  margin: 0;
+}
+
+.plan__price span {
+  display: block;
+  font-size: 1.5625rem;
+  font-weight: 300;
+}
+
+.plan__description {
+  /*text-align: center;*/
+  color: white;
+  margin: 2em 0;
+}
+
+.plan__button {
+  /*text-align: center;*/
+  background: white;
+  color: #4e4e4e;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}

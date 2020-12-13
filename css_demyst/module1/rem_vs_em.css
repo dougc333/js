@@ -1,0 +1,65 @@
+:root {
+}
+
+html {
+}
+
+.href_link {
+  box-sizing: border-box;
+  padding: 0px 5px;
+  background: red;
+  outline: 1px solid black;
+  display: inline-block;
+  font-size: 1em;
+  text-align: center;
+  text-decoration-color: aqua;
+}
+
+/*display:inline-block can set width,height of elements, be careful overrides content dimensions.  */
+/* everhting locked in for small_btn and btn padding is same for both buttons. doesnt look rigth*/
+.large_btn {
+  outline: 1px solid black;
+  padding: 5px 10px;
+  font-size: 4rem;
+}
+
+.small_btn {
+  outline: 1px solid black;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+
+/* em is relative to parent, rem is to html. you want em for button, local to parent only so it scales
+w parent element. html is fixed size. doesnt scale for accessibility but parent container scales for accessiblity
+so when you shrink screen button spacing between text and button scales w it. Dont use rem for padding in buttons!!!!
+*/
+
+/* can see with border radious better to use percentage for scaling. px doesnt scale */
+.large_btn_em {
+  padding: 0.33em 0.5em;
+  font-size: 4rem;
+  display: inline-block;
+  border-radius: 3em;
+}
+
+.small_btn_em {
+  padding: 0.33em 0.5em;
+  font-size: 0.75em;
+  display: inline-block;
+  border-radius: 3em;
+}
+
+/* border rasius with rem*/
+.large_btn_rem {
+  padding: 0.33em 0.5em;
+  font-size: 4rem;
+  display: inline-block;
+  border-radius: 3rem;
+}
+
+.small_btn_rem {
+  padding: 0.33em 0.5em;
+  font-size: 0.75em;
+  display: inline-block;
+  border-radius: 3rem;
+}

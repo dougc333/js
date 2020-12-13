@@ -1,0 +1,51 @@
+/* scss cover 1) nesting + parent selector, 2) mixins, 3) imports*/
+/* https://www.youtube.com/watch?v=1rzjMyOkyoQ  */
+/* big win if u use BEM */
+body {
+  background: red;
+}
+
+div {
+  min-height: 100px;
+  display: inline;
+}
+
+/* good for grouping CSS into sections like navbar */
+.nav {
+  background: lightblue;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: 0;
+}
+
+.nav__link {
+  color: red;
+}
+
+.nav-toggle {
+  padding: 0;
+}
+
+/*2. mixin */
+body {
+  color: red;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  body {
+    color: green;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 300px) {
+  body {
+    color: blue;
+  }
+}
+/*# sourceMappingURL=test.css.map */

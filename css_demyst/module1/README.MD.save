@@ -1,0 +1,4 @@
+NOTES from llive lecture 01
+Never use fixed dimensions because when you resize the layout needs to resize. You should see margins and padding change with platform and viewport size
+not stay teh same so rem,em generally make more sense than px. Even for padding and margins. 
+the referenced blogpost contains errors: 

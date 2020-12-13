@@ -1,0 +1,31 @@
+/* ids are more specific than class */
+/* classes are more specific than element selectors*/
+/* combined selectors mroe specific than single selectors*/
+/* inline sytles more specific than style sheets*/
+/* the order of classes in html doesnt matter!!!*/
+body {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+div {
+  box-sizing: border-box; /* if you leave this out the content will overflow to right */
+  line-height: 1.6;
+  min-height: 1 rem;
+  outline: 1px solid black;
+  padding: 10px; /* make a nice ring around the 2 divs */
+}
+
+.trick_question {
+  font-family: sans-serif;
+  font-size: 1.125em;
+}
+
+.red {
+  color: black;
+  background: red;
+}
+.blue {
+  color: black;
+  background: skyblue;
+}

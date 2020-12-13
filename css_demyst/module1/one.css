@@ -1,0 +1,29 @@
+.content {
+  /*border: 30px solid red;*/
+  padding: 10px;
+  margin-top: 10em;
+  background: white;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-bg: #ddd;
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-body);
+  background: var(--clr-bg);
+}
+
+.title {
+  margin: 0 0 0.5em;
+  font-weight: 900;
+  color: var(--clr-primary);
+  line-height: 0.8;
+}

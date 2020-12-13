@@ -1,0 +1,38 @@
+/* center a div with margin:auto this makes top bottom left right margins equal depending on space left */
+
+body {
+  font-family: "Roboto" sans-serif;
+  font-weight: 900;
+  color: #00a1ab;
+  /*text-align: center;*/
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+h1 {
+  color: #00b4ac;
+  text-align: center;
+  border: 1px solid green;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+.subhead {
+  color: red;
+  text-align: center;
+  border: 1px solid red;
+  margin-top: 0;
+}
+/*margin 0 auto centers the div. why? */
+.plan {
+  background: linear-gradient(-45deg, #00a1ab);
+  width: 200px;
+  padding: 2em;
+  border: 1px solid purple;
+  border-radius: 1em;
+  text-align: center;
+  min-height: 200px;
+  margin: 0 auto;
+}

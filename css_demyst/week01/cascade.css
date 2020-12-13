@@ -1,0 +1,13 @@
+p {
+  font-style: sans-serif;
+  color: orange;
+  font-style: bold;
+}
+
+div {
+  outline: 1px solid black;
+}
+/* the whole point of cascade is the styles cascade from top to bottom*/
+p {
+  font-style: italic;
+}

@@ -1,0 +1,18 @@
+:root {
+  --clr-red: rgba(232, 139, 139);
+  --clr-blue: rgba(96, 168, 235);
+  --clr-pink: rgba(223, 135, 204);
+  --clr-orange: rgba(235, 143, 96);
+  --clr-purple: rgba(139, 146, 232);
+  --clr-green: rgba(81, 188, 157);
+  --clr-white: rgba(255, 255, 255);
+  --clr-neutral-400: rgba(94, 94, 94);
+  --clr-neutral-300: rgba(240, 242, 244);
+
+  --fs-title: 3rem;
+  --fs-base: 1rem;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+}

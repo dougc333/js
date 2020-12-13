@@ -1,0 +1,20 @@
+.parent {
+  margin-top: 10em;
+  background: paleturquoise;
+}
+
+/*dont set heights in general in CSS bc heights change depending on content inside it. if 
+you set height you may be asking for problems later. bad design habit. What can happen is you add height
+then you add content and when you add you end up overflowing*/
+/* or when you resize the window, like on phones the content overflows. */
+/* if you need to set height, use min-height. Even if you have no content it will leave that min height box. */
+/* if you need more background or empty space on bottom change padding not height!!*/
+
+.content {
+  background: grey;
+  margin: 0 auto;
+  padding: 3em;
+  min-height: 100px;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  border: 1px solid black;
+}

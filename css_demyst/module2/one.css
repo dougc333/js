@@ -1,0 +1,114 @@
+/*global settings font sizes are global */
+/*reset week1 live*/
+:root {
+  --clr-primary: rgba(204, 0, 98, 1);
+  --clr-neutral-light: rgb(186, 195, 209);
+  --clr-neutral-dark: rgba(2, 2, 3, 1);
+  --clr-neutral-white: white;
+
+  /* Text size styles */
+  --fs-heading: 34px;
+  --fs-body: 1.125rem;
+  --fs-title: 54px;
+}
+
+/*utility classes for backgorund. When you are setting bg, 
+chances are it will be used again we can see from the sample image we have a
+white greyish purplb black background color in the 3 sections*/
+.bg-light {
+  background: var(--clr-neutral-light);
+  color: var(--clr-neutral-dark);
+}
+
+.bg-primary {
+  background: var(--clr-primary);
+  color: var(--clr-neutral-white);
+}
+
+.bg-dark {
+  background: var(--clr-neutral-dark);
+  color: var(--clr-neutral-white);
+}
+
+/*default html font size is 16px*/
+/*common to set font-size to 62.5%*/
+/*dont use px for accessiblity, use em, rem*/
+/*62.5% * 16px is 10px. Dont hardcode 10px in for html*/
+/*one reason people set font-size in html to 10px is you can set 1.8rem in body and you know this is 18px. 
+makes math easy*/
+html {
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  padding: 0 2rem;
+  margin: 0 auto; /* center*/
+  max-width: 50rem; /* min width cant resize below this, 600px or 900px standard */
+  outline: 2px solid red; /* holy moly, outline vs border. outline doesnt affect layout!!*/
+}
+/* percentatges for floats now we use flex and no percentages*/
+/* if you want to do 2 columns in a container div then percentages are ok */
+
+/* setting body sets href, lists, button w this then you have to overrice*/
+/* might be better to leave out of body and set in Hx and individual elements */
+/* if you want 18px for body and u dont set html to a value and use default then 
+18/16=1.125 so he sets 1.125 rem for body and leaves html clean */
+/* border is part of box model outline is not/ border gets added to total size*/
+body {
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  font-size: var(--fs-body);
+}
+
+/*end reset*/
+
+button {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: var(--fs-title);
+}
+h2 {
+  font-size: var(--fs-heading);
+}
+section {
+  padding: 3rem 0;
+}
+scetion p {
+  max-width: 40ch;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-left p {
+  margin-right: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-right p {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-left {
+  margin-right: auto;
+}

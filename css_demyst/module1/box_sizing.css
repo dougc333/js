@@ -1,0 +1,17 @@
+.content {
+  /*overflows bc width includes border and padding. */
+  /*adding box-sizing includes the border and padding making it fit wo overflow!*/
+  /*box sizing makes easier to design to what people think*/
+  /*if you dont set margins in inside content setting widtg to 100%no overflow?*/
+  box-sizing: border-box;
+  width: 100%;
+  border: 5px solid plum;
+  padding: 10px;
+  margin-top: 10em;
+  /*why do margins overflow the 100%? they dont work in box-sizing*/
+}
+
+.parent {
+  border: 5px solid green;
+  width: 200px;
+}

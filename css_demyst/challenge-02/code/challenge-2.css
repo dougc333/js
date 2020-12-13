@@ -1,0 +1,78 @@
+:root {
+  --clr-neutral-100: #fff;
+  --clr-neutral-400: #474554;
+  --clr-primary-200: #bac9e8;
+  --clr-primary-300: #3c7dff;
+  --clr-primary-400: #0044cc;
+  --clr-primary-500: #0c1832;
+
+  --ff-base: "IBM Plex Serif", serif;
+  --ff-accent: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.0625rem;
+  font-family: var(--ff-base);
+  line-height: 1.65;
+  background-color: var(--clr-primary-200);
+  padding: 4rem;
+}
+
+.section-title {
+  font-family: var(--ff-accent);
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+.cta {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 2.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--ff-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.625rem;
+}
+
+.btn-primary {
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+.btn-primary:hover {
+  background: var(--clr-primary-300);
+}
+
+.btn-secondary {
+  background: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
+}
+.btn-secondary:hover {
+  background: var(--clr-primary-500);
+}
+
+.btn-outline {
+  border: 2px solid var(--clr-primary-400);
+  color: var(--clr-primary-400);
+  /* remove the border size from the padding for equal sizing */
+  padding: calc(0.625rem - 2px) calc(1.5rem - 2px);
+}
+.btn-outline:hover {
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.bg-light {
+  background: var(--clr-neutral-100);
+}

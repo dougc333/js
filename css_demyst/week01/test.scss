@@ -1,0 +1,55 @@
+/* scss cover 1) nesting + parent selector, 2) mixins, 3) imports*/
+/* https://www.youtube.com/watch?v=1rzjMyOkyoQ  */
+/* big win if u use BEM */
+body {
+  background: red;
+}
+div {
+  min-height: 100px;
+  display: inline;
+}
+/* good for grouping CSS into sections like navbar */
+
+.nav {
+  background: lightblue;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-left: 0;
+  }
+
+  &__link {
+    color: red;
+  }
+
+  &-toggle {
+    padding: 0;
+  }
+}
+// these comments do not end up in css file after compilation
+/*2. mixin */
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+body {
+  color: red;
+  //this doesnt switch body to green leaves text color green always
+  @include mq(500px) {
+    color: green;
+  }
+}
+
+//can next mediq queries inside sass
+@include mq(600px) {
+  body {
+    background: blue;
+  }
+}

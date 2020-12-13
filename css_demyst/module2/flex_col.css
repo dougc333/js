@@ -1,0 +1,16 @@
+/* flex columns make sense to use percentage of parent for width and not a constant value*/
+/* if you are using grid, this can be an issue */
+/* check mobile view */
+/* viewport units bad for accessibility when you zoom in fonts dont get bigger. clamp(1rem, 2vw) 
++1rem, 3rem) , ok to use viewport units in clamp. Else dont use to set margins, padding*/
+
+/*using vw units for font sizes makes them same if you zoom in/out. but w clamp different*/
+:root {
+  --fs-heading: 34px;
+  --fs-body: clamp(1rem, 2vw_1rem, 3rem);
+  --fs-title: 54px;
+}
+
+* {
+  box-sizing: inherit;
+}

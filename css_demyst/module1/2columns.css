@@ -1,0 +1,26 @@
+.parent {
+  display: flex;
+  border: 1px solid red;
+  margin-top: 3em;
+  min-height: 30em;
+}
+
+.title {
+  font-family: sans-serif;
+  color: var(--clr-primary);
+  border: 1px solid brown;
+}
+.para {
+  border: 1px solid orange;
+}
+.column {
+  border: 1px solid greenyellow;
+  width: 100%;
+  border: 1px solid blueviolet;
+  padding: 3em;
+}
+:root {
+  --clr-primary: #ee6352;
+  --clr-body: #333;
+  --clr-bg: #dda;
+}

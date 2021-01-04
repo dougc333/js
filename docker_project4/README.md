@@ -1,0 +1,3 @@
+npm install
+./run.sh
+

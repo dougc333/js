@@ -1,0 +1,16 @@
+{
+  "name": "lodash_lib",
+  "version": "1.0.0",
+  "description": "simplest: add a lodash library according to the tutorial. This includes the lodash library, Is this the same as including the lodash minified version?  LIbraries have a debug and production minified version. How does webpack handle minify?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}

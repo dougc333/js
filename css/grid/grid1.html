@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <style>
+      .container {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(3, 1fr);
+         justify-items: center; /*default start. center then dont need margin? NO need top margin */
+         align-items: center;  /*default */
+         border: 1px solid green;
+      }
+
+      .item {
+         border: 1px solid black;
+         width:4em; /* want rectangle to see better vs size around content */
+         margin:4em 0 0 0 ; /* want to see boxes apart from each other */
+      }
+    </style>
+    </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      
+    </div>
+  </body>
+</html> 

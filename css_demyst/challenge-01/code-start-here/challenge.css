@@ -26,6 +26,16 @@ body {
   max-width: 62.5rem;
   margin: 0 auto;
 }
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.subtitle {
+  width: 70%;
+  line-height: 2;
+  max-width: 50%;
+}
 
 .cards {
   display: grid;

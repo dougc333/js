@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container{
+                text-align:center;
+                margin:0;
+                padding: 0 6rem;
+                max-width: 60%;
+                border: 1px solid black;
+            }
+            .subheader{
+                line-height: 2em;
+                border: 1px solid green;
+                max-width: 50%;
+                margin: 0 0 0 10em; /* this is bad bc it doesnt stay centered as you scale the windoe */
+
+            }
+            h1{
+                margin:0;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <h1>This is the header some important stuff here</h1>
+            <p class="subheader">
+                this is a subheader align it below the header in a smaller width breaking over multiple lines with 
+                spacing between the lines and centered below the header. does text-align really work in a parant inline block element?
+            </p>
+        </div>
+    </body>
+</html>

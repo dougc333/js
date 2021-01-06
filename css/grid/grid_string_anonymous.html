@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          .container{
+            display:grid;
+            border: 1px solid green;
+            /*width:10px;*/ /*deliberately set small width to see overflow */
+          }
+          .item{
+            border: 1px solid black;
+            background-color: plum;
+          }
+          .inside{
+            font-size: 14;
+            font-style: sans-serif;
+            font-weight: bold;
+          }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            now for some text <span class="item">more text here</span>
+            and super long text what is placed after the boundaries of the grid container. is there overflow? 
+            <div class="item">does the span in text get sent to anoter row? <span class="inside">we dont know </span>unless we test this</div>
+            what is the difference using grid with rows as in putting text inside grid rows vs. puttig text in divs nested in another div? 
+            Even if we dont need columns is there an advantage for grid rows? The problem is any html tags in the text will break up the text into 
+            another row. This wasnt obvious before this exercise!!! 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container{
+                width:90%;
+                max-width: 46em;
+            }
+            
+            .first_p {
+                font-size:medium;
+                font-weight:100;
+                margin-top: 10px;
+                margin-bottom:10px;
+                border:1px solid black;
+                width:fit-content;
+            }
+            .second_p {
+                font-size:medium;
+                font-weight:100;
+                margin-top: 10px;
+                margin-bottom:10px;
+                border:1px solid green;
+                width:fit-content;
+            }
+            .read_me{
+                /* I didnt set a max width or width here, use the container width*/
+                border: 1px solid black;
+                padding:1px 1px 1px 1px;
+            }
+            .parent_div{
+                /*border: 1px solid red;*/
+                background-color: aqua;
+                /*height:100px; */
+            }
+            .parent_div2{
+                /*border: 1px solid red;*/
+                background-color:bisque;
+                /*height:100px; */
+            }
+            
+            hr.dashed {
+                border-top: 3px dashed #bbb;
+            }
+            .blue {
+              background-color: lightblue;
+            }
+        
+            .pink {
+              background-color: lightpink;
+            }
+            .p1 {
+              margin-top: 32px;
+            }
+        </style>
+        <script>
+            function find_sep(){
+                console.log("foo");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <p class="first_p">first paragraph</p>
+            <p class="second_p"> second paragraph</p>
+            <p class="read_me">the first and second paragraph should be separated by 20px because the first paragraph has a bottom margin of 10px and 
+            second paragraph has a margin of 10px which means the 2 paragraphs should be separated by 20px. instead the margins were
+            collased to 10px. Collapsing only for vertical elements. not horizontal</p>
+            <p class="read_me"> adding a br element will remove margin collapse. Block items have a new line inserted. </p>
+            <p class="first_p">first paragraph with added br</p>
+            <br>
+            <p class="second_p"> second paragraph with added br</p>
+            <p class="read_me">margin collapse no longer is implemented by the browser runtime when there is an element
+                between paragraphs. Even if this is an invisible element. This can cause design problems.  What happens if there are 2 stacked elements with different top and bottom margins? The bigger one wins. Does 
+                this hold for images? 
+            </p>
+            <img class = "first_p" src="junk.png">d
+            <img class = "second_p" src="junk.png">
+            <p>margin collapse holds for image elements. </p>
+            <div class="parent_div">
+              <p class="first_p">first paragraph in a div</p>
+            </div>
+              <p class="second_p"> second paragraph. do margins collapse when I am in a div? Yes they do 
+                why might that be? Are margins associated w/elements or their parents? Yes margin is meant
+                to keep distance between siblings as long as there is no element between them like a br in between
+                elements and the height of the parent isnt set and the parent doesnt have padding or border along the 
+                edge that is being collapsed. Tricky.  
+              </p>
+              <p> if we set a border, padding or height on the parent div then margin collapse is disabled
+                  and the spacing expands. Is there a difference between a border setting w/o the bottom 
+                  edge? If we set border wo setting bottom eddge then can we keep margin collapse? 
+              </p>
+              <div class="parent_div2">
+                <p class="first_p">first paragraph in a div test height, margin padding in parent div</p>
+              </div>
+                <p class="second_p"> second paragraph. 
+                </p>
+                <hr class="dashed">
+                <h1>margins collapse in same direction!!</h1>
+                <div class='parent'>
+                    <p class="child">paragraph</p>
+                </div>
+                <h1>parent child margin collapse. Very common</h1>
+                <section class="blue">
+                    <p id="p1a" class="p1">Paragraph One</p>
+                  </section>
+                  <section class="pink">
+                    <p id="p1b" class="p1"> Paragraph Two</p>
+                  </section>
+                  <script >
+                      console.log("asdfasdf");
+                      let p1a = document.getElementById("p1a");
+                      console.log(p1a);
+                      console.log(p1a.style);
+                      console.log('---------')
+                      //console.log(document.querySelector('body').style);
+                      //console.log(document.querySelector('body').style.getPropertyValue('margin'));
+                      console.log(document.styleSheets[0])
+                      console.log('---------')
+
+                      console.log(getComputedStyle(p1a));
+                      console.log(typeof(getComputedStyle(p1a)));
+                      console.log(Object.values(getComputedStyle(p1a)));
+
+                      
+                  </script>
+        </div> 
+    </body>
+</html>

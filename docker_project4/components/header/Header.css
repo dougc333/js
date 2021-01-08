@@ -1,0 +1,17 @@
+
+
+.top{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.fig{
+    width:30%;
+    border: thin silver solid;
+    margin:0.1em;
+    padding: 0.1em;
+    text-align:center;
+    font-style:italic;
+    text-indent:0;
+}

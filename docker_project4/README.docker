@@ -1,0 +1,3 @@
+dockerfile for project4 with webserver and mongo. 
+dockerfile include running eslint image wont build if fail tests
+

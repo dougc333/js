@@ -1,9 +1,0 @@
-{
-  babel:{
-   "presets": [
-              "env",
-	      "react",
-              "stage-2"
-              ]
-  }
-}

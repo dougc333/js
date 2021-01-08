@@ -1,8 +1,0 @@
-#!/bin/bash
-
-
-eslint *.jsx
-eslint components/dynamic/*.jsx
-eslint components/example/*.jsx
-eslint components/header/*.jsx
-eslint components/states/*.jsx

@@ -1,5 +1,0 @@
-simplest: add a lodash library according to the tutorial. This includes
-the lodash library, Is this the same as including the lodash minified version? 
-LIbraries have a debug and production minified version. How does webpack handle minify? 
-
-

@@ -17,12 +17,18 @@ class Posts extends React.Component{
   
   render(){
     return(
-      <div class="post_container"> 
-        <div class="post_div-style" onClick={this.handleClick}>Posts here
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        <Button>Submit</Button>
+      <div class="post_container-style"> 
+      <div>
+      Posts here
       </div>
-      </div>);
+      <div>
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+        </div>
+        <div>
+        <Button class="submit-style" onClick='handleClick'><span class="text-style">Submit</span></Button>
+        </div>
+      </div>
+      );
   }
 }
 

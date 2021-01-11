@@ -1,0 +1,10 @@
+.comment_div-style {
+  background-color: yellow;
+  text-align: center; /*careful if you add width:50% you are adding another 50% on top of the post 50%! inheritance */
+}
+.post_div-style {
+  text-align: center;
+}
+.submit-style {
+  /* wow how did it inherit the submit button style from posts.css?*/
+}

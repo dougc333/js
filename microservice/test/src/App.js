@@ -1,8 +1,8 @@
-import CreatePost from './components/CreatePost'
+import CreatePost from './component/CreatePost'
 
-function App() {
+const App =()=> {
   return (
-   <CreatePost></CreatePost>
+    <CreatePost/>
   );
 }
 

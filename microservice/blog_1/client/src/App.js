@@ -4,14 +4,12 @@ import FromLec from './components/FromLec';
 import Comments from './components/comments';
 import {Grid} from "@material-ui/core";
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
   <Grid>
-    sss
       <FromLec></FromLec>
       <Comments></Comments>
-    aa
   </Grid>  
     </div>
   );

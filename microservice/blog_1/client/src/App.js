@@ -1,17 +1,17 @@
 import './App.css';
-//import Posts from './components/posts';
-import FromLec from './components/FromLec'; 
+import Posts from './components/posts';
 import Comments from './components/comments';
-import {Grid} from "@material-ui/core";
+import {Grid,Container,Typography} from "@material-ui/core";
+import FunctionalPost from './components/functional_post';
 
 const App=()=> {
   return (
-    <div className="App">
-  <Grid>
-      <FromLec></FromLec>
-      <Comments></Comments>
-  </Grid>  
-    </div>
+    <Container>
+      <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} >
+        <Posts/>      
+        <Comments />
+      </Typography>
+    </Container>
   );
 }
 

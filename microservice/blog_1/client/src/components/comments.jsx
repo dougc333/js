@@ -1,5 +1,6 @@
 import React from 'react';
 import './comments.css';
+import {TextField} from '@material-ui/core';
 
 class Comments extends React.Component{
   constructor(props){
@@ -16,12 +17,12 @@ class Comments extends React.Component{
   }
   render(){
     return(
-      <div class="comment_div-style"> 
+      <div className="comment_div-style"> 
       <form action="" method="get">
         <fieldset>
           <div> 
           <label >Post ID:</label>
-          <input type="text"></input>
+          <TextField input type="text" />
           </div>
           <label>Add Comment:</label>
           <input type="text"></input>

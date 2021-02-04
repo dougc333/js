@@ -1,6 +1,6 @@
 //objects and funny stuff
 //object literal different behavior and methods than instantiated object
-
+//dynamic properties
 
 const name="bob"; 
 const age=100; 

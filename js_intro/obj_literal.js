@@ -4,15 +4,20 @@
 
 const name="bob"; 
 const age=100; 
+const ageField = "age";
 
 const hairColor="a";
 
 const person={
   name:"somebody",
   "country":"India",
+  [ageField]:1,
   sayHi(){
     console.log("hi");
   },
+  "greet me"(){
+     console.log("yo bitch");
+   },
   "fn name w spaces"(){
     console.log("this is new, fn names w spaces");
   }
@@ -42,5 +47,9 @@ console.log("prob_not_set.foo",prop_not_set.foo);
 console.log("the lesson? testing just became a lot harder");
 console.log("use dir:",prop_not_set.dir);
 //console.log("Object.getOwnPropertyNames()",Object.getOwnPropertyNames(prop_not_set));
-person["fn name with spaces"]();
+//how to call fn names with spaces?
+person["greet me"](); 
+person["fn name w spaces"]();
+console.log("property name substitution in [], geField is defined and substituted with string age!!!");
+console.log("age not defined what is person[\"age\"]?",person["age"]);
 

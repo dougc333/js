@@ -39,7 +39,8 @@ var CustomObject = function () {
 
         for (let i = 0; i < evs.length; i++) {
           console.log("evs[i]:",evs[i]);  
-  	  evs[i].apply(null, args);
+ 	  console.log(typeof(evs[i])); 	  
+	  evs[i].apply(null, args);
         }
     };
 }

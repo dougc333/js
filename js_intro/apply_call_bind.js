@@ -3,7 +3,6 @@
 
 class MyClass{
   constructor(){
-    //what is ctor for? 
     this.id=10
   }
 
@@ -17,14 +16,15 @@ class MyClass{
 }
 const mc = new MyClass();
 //tricky reads 00 as string or int?
-//mc.getIvar(00);
-//
+mc.getIvar(00);
+console.log("end getIvar 00");
+
 //console.log("mc.getIvar(1).apply(this [1,1,1]])");
 //mc.apply(this,[1,1,1]);
 //console.log("ms.getIvar(2).call(this,1,2,3)");
 //mc.getIvar("twoIvar").call(this,1,2,3);
 
-
+console.log("-----------")
 mc.getIvar("01").apply(null,[1,1,1]);
 mc.getIvar("02").call(null,1,2,3);
 

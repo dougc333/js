@@ -36,10 +36,12 @@ var CustomObject = function () {
         console.log("evs:",evs);
 	console.log("_this.events:",_this.events);
 	console.log("name",name);
+        console.log("args in _this.fireEvent:",args);
 
         for (let i = 0; i < evs.length; i++) {
           console.log("evs[i]:",evs[i]);  
  	  console.log(typeof(evs[i])); 	  
+	  
 	  evs[i].apply(null, args);
         }
     };

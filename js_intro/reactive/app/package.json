@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "sms w observable https://www.twilio.com/blog/confirming-sms-message-delivery-with-rxjs-observables-node-js-and-twilio-programmable-sms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esg": "^3.0.4",
+    "esm": "^3.2.25",
+    "node": "^15.8.0",
+    "rxjs": "^6.6.3",
+    "twilio": "^3.56.0"
+  }
+}

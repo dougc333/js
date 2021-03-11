@@ -1,6 +1,7 @@
 
 //multiple promises ie wait for db to return or req to complete. 
-//
+//this is what most beginners do. It is wrong. These aren't chained callback functions. 
+//they need to be nested. 
 
 
 //chaining promises
